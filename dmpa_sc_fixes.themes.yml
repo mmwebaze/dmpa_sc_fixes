@@ -1,0 +1,11 @@
+block__dmpa__panel:
+  label: Dmpa Panel
+  type: block
+  category: Block
+  configuration:
+    path: templates/dmpa_panel
+    base hook: block
+    render element: elements
+  extras:
+    placement: 1
+    label: 1

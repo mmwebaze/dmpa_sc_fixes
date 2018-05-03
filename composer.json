@@ -1,0 +1,14 @@
+{
+  "name": "drupal/dmpa_sc_fixes",
+  "type": "drupal-module",
+  "description": "Contains various fixes.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/dmpa_sc_fixes",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/dmpa_sc_fixes",
+    "source": "http://cgit.drupalcode.org/dmpa_sc_fixes"
+  },
+  "require": { }
+}

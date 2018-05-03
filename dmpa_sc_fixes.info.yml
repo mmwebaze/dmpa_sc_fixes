@@ -1,0 +1,5 @@
+name: 'DMPA-SC fixes'
+type: module
+description: 'Contains various fixes.'
+core: 8.x
+package: 'Custom'

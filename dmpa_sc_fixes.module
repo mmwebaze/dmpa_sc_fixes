@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains dmpa_sc_fixes.module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function dmpa_sc_fixes_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the dmpa_sc_fixes module.
+    case 'help.page.dmpa_sc_fixes':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Contains various fixes.') . '</p>';
+      return $output;
+
+    default:
+  }
+
+}
+
+// Temporary fix for https://www.drupal.org/project/drupal/issues/2230909
+function dmpa_sc_fixes_form_alter(array &$form, FormStateInterface $form_state) {
+
+  if($form['#id']== 'node-process-indicators-submission-edit-form') {
+    $form['field_6_3']['widget'][0]['subform']['field_total_cost_of_plan']['widget'][0]['value']['#step']='any';
+    $form['field_6_3']['widget'][0]['subform']['field_total_cost_of_plan_usd']['widget'][0]['value']['#step']='any';
+    $form['field_6_3']['widget'][0]['subform']['field_amount_funded']['widget'][0]['value']['#step']='any';
+    $form['field_6_3']['widget'][0]['subform']['field_amount_funded_usd']['widget'][0]['value']['#step']='any';
+  }
+
+
+}

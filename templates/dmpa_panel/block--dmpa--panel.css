@@ -1,0 +1,13 @@
+/**
+ * @file
+ * Visual styles for block bootstrap panel.
+ */
+
+.block-bootstrap-panel .panel-toggle {
+  width: 100%;
+}
+.block-bootstrap-panel .panel-menu {
+  width: 100%;
+  padding: 15px;
+  margin: 0px 0px 20px;
+}

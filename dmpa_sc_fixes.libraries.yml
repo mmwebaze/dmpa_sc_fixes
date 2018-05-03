@@ -1,0 +1,8 @@
+block_dmpa_panel:
+  version: VERSION
+  js:
+    templates/dpma_panel/block--dmpa--panel.js: {}
+  css:
+    component:
+      templates/dpma_panel/block--dmpa--panel.css: {}
+
